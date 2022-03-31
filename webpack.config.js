@@ -32,6 +32,12 @@ module.exports = {
                 use: {
                     loader: 'babel-loader',
                 }
+            },
+            {   //para importar imagenes desde el src
+                test:/\.(png|svg|jpg|gif)$/,
+                use: [
+                    'file-loader',
+                ]
             }
         ]
     },
